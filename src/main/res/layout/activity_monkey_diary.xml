@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MonkeyDiary">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#344955"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewMonkeyTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/work_sans"
+                android:text="@string/diary"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/work_sans"
+                android:text="@string/date"
+                android:textColor="#4A6572" />
+        </LinearLayout>
+
+
+        <ScrollView
+            android:id="@+id/scrollView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/nav_bullet"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewMonkeyQuestion"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/work_sans"
+                    android:text="@string/what_s_in_your_mind_today"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#232F34"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/editTextMonkeyEnter"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/work_sans"
+                    android:gravity="start|top"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:hint="@string/insert_your_memories_here"
+                    android:inputType="textMultiLine"
+                    android:textColor="#4A6572"
+                    app:backgroundTint="#424242"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/imageButtonCalendar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/roundedbuttonsave"
+                    android:backgroundTint="#F9AA33"
+                    android:cropToPadding="false"
+                    app:srcCompat="@drawable/ic_calendarvector" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonMore"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/roundedbuttonsave"
+                    android:backgroundTint="#F9AA33"
+                    android:cropToPadding="false"
+                    app:srcCompat="@drawable/ic_unfold_more_black_24dp" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonSave"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/roundedbuttonsave"
+                    android:backgroundTint="#F9AA33"
+                    android:cropToPadding="false"
+                    app:srcCompat="@drawable/ic_save_black_24dp" />
+
+            </FrameLayout>
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#344955"
+                android:fontFamily="@font/roboto"
+                app:itemIconTint="@color/nav_bar_icon_tint"
+                app:itemTextColor="@color/nav_bar_icon_tint"
+                app:menu="@menu/bottom_navigation">
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

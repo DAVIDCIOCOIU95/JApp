@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/nav_home" />
+    <item
+        android:id="@+id/nav_bullet"
+        android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+        android:title="@string/nav_bullet"/>
+
+
+
+    <item
+        android:id="@+id/nav_monkey"
+        android:icon="@drawable/ic_book_black_24dp"
+        android:title="@string/nav_diary"/>
+
+</menu>

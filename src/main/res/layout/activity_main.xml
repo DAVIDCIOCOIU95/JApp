@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:id="@+id/homelayout"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/homelayoutinner"
+        android:layout_width="match_parent"
+        android:layout_height="536dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#344955"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/work_sans"
+                android:text="@string/journal"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <ImageButton
+                    android:id="@+id/imageButtonNotification"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="right"
+                android:background="@drawable/roundedbuttonsave"
+                android:backgroundTint="#F9AA33"
+                android:cropToPadding="false"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/ic_alarm_black_24dp" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/work_sans"
+                android:text="@string/date"
+                android:textColor="#4A6572" />
+
+            <TextView
+                android:id="@+id/textViewQuote"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/work_sans"
+                android:text="@string/daily_quote"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#232F34"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/nav_bullet"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextQuote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/work_sans"
+                    android:gravity="center"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:hint="@string/insert_your_quote_here"
+                    android:inputType="textMultiLine"
+                    android:textColor="#4A6572"
+                    app:backgroundTint="#424242" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_format_quote_black_24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            >
+
+            <ListView
+                android:id="@+id/listQuote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/work_sans"
+                android:textColor="#232F34" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/imageButtonCalendar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/roundedbuttonsave"
+                    android:backgroundTint="#F9AA33"
+                    android:cropToPadding="false"
+                    app:srcCompat="@drawable/ic_calendarvector" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonMore"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/roundedbuttonsave"
+                    android:backgroundTint="#F9AA33"
+                    android:cropToPadding="false"
+                    app:srcCompat="@drawable/ic_unfold_more_black_24dp" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonSave"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/roundedbuttonsave"
+                    android:backgroundTint="#F9AA33"
+                    android:cropToPadding="false"
+                    app:srcCompat="@drawable/ic_save_black_24dp" />
+
+            </FrameLayout>
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#344955"
+                android:fontFamily="@font/roboto"
+                app:itemIconTint="@color/nav_bar_icon_tint"
+                app:itemTextColor="@color/nav_bar_icon_tint"
+                app:menu="@menu/bottom_navigation">
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

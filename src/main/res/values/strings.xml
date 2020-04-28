@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Coursework</string>
+    <string name="bullet_journal">Bullet Journal</string>
+    <string name="date">Date</string>
+    <string name="what_are_you_grateful_for">What are you grateful for?</string>
+    <string name="what_would_make_today_great">What would make today great?</string>
+    <string name="insert_your_memories_here">Insert your memories here</string>
+    <string name="daily_affirmations">Daily Affirmations</string>
+    <string name="diary">Diary</string>
+    <string name="what_s_in_your_mind_today">What\'s in your mind today?</string>
+    <string name="journal">Journal</string>
+    <string name="daily_quote">Daily Quote</string>
+    <string name="insert_your_quote_here">Insert your quote here</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_bullet">Bullet Diary</string>
+    <string name="nav_diary">Diary</string>
+    <string name="journal_notification">Notification</string>
+    <string-array name="spinnerMenu">
+        <item>Set Reminder</item>
+        <item>Set Hello</item>
+    </string-array>
+</resources>

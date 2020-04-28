@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Coursework</string>
+    <string name="bullet_journal">Bullet Journal</string>
+    <string name="date">Data</string>
+    <string name="what_are_you_grateful_for">Per cosa sei grato?</string>
+    <string name="what_would_make_today_great">Cosa renderebbe oggi grandioso?</string>
+    <string name="insert_your_memories_here">Inserisci le tue memorie qui</string>
+    <string name="daily_affirmations">Affermazioni Quotidiane</string>
+    <string name="diary">Diario</string>
+    <string name="what_s_in_your_mind_today">Che cosa c\'e\' nella tua mente oggi??</string>
+    <string name="journal">Journal</string>
+    <string name="daily_quote">Citazione del giorno</string>
+    <string name="insert_your_quote_here">Inserisci la tua citazione qui</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_bullet">Bullet Diary</string>
+    <string name="nav_diary">Diary</string>
+    <string name="journal_notification">Notifiche</string>
+</resources>
